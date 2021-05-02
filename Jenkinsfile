@@ -1,8 +1,21 @@
-node{
-stage('scm checkout'){
-git 'https://github.com/nitheshkumar229/bankapp'
-}
-stage ('compile-package'){
-  sh 'mvn package'
-}
-}
+pipeline { 
+agent any 
+    stages { 
+        stage ('Build') { 
+ 
+        }
+        stage ('Test') { 
+        
+        }
+        stage ('QA') { 
+        
+        }
+        stage ('Deploy') { 
+        
+        }
+        stage ('Monitor') { 
+ 
+        }
+ 
+    }           
+ }
